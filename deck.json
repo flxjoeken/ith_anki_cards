@@ -239,9 +239,39 @@
             "__type__": "Note",
             "fields": [
                 "Was ist die Konfiguration einer Turing Maschiene?&nbsp;",
-                "Sei&nbsp;\\(M = (Q, \\Sigma, \\Gamma, \\Delta, s, F)\\)&nbsp;eine k-TM. EIne Konfiguration von M ist\\[C= (q, w_1, ..., w_k, p_1, ..., p_k) \\in Q \\times (p^*)^k \\times \\mathbb N ^k\\]<br>"
+                "Sei&nbsp;\\(M = (Q, \\Sigma, \\Gamma, \\Delta, s, F)\\)&nbsp;eine k-TM. Eine <b>Konfiguration</b> von M ist ein Tupel\\[C= (q, w_1, ..., w_k, p_1, ..., p_k) \\in Q \\times (p^*)^k \\times \\mathbb N ^k\\]mit&nbsp;\\(p_i \\in [|w_i|] \\quad \\forall i \\in [k]\\)"
             ],
             "guid": "qaRUqhMNBb",
+            "note_model_uuid": "4505bd50-f400-11ed-afc9-4d7ac4064051",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Was ist eine endliche partielle Rechnung?",
+                "Sei&nbsp;\\(M = (Q, \\Sigma, \\Gamma, \\Delta, s , F)\\)&nbsp;eine k-TM.&nbsp;<br><br>Eine <span style=\"color: rgb(248, 228, 92);\">endliche partielle Rechnung</span><span style=\"color: rgb(0, 0, 255);\">&nbsp;</span>von M ist eine endliche Folge&nbsp;\\(C_1, ..., C_n\\)&nbsp;von Konfigurationen von M mit:&nbsp;\\[C_i \\mapsto_M C_{i+1} \\quad \\forall i \\in [n-1]\\]<br>"
+            ],
+            "guid": "A6-pF_^mC]",
+            "note_model_uuid": "4505bd50-f400-11ed-afc9-4d7ac4064051",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Was ist eine unendliche partielle Rechnung?&nbsp;",
+                "Sei&nbsp;\\(M = (Q, \\Sigma, \\Gamma, \\Delta, s , F)\\)&nbsp;eine k-TM.&nbsp;<br><br>Eine&nbsp;<span style=\"color: rgb(248, 228, 92);\">unendliche partielle Rechnung</span><span style=\"color: rgb(0, 0, 255);\">&nbsp;</span>von M ist eine unendliche Folge&nbsp;\\(C_1,C_2, ...\\)&nbsp;von Konfigurationen von M mit:&nbsp;\\[C_i \\mapsto_M C_{i+1} \\quad \\forall i \\in \\mathbb N\\]<br>"
+            ],
+            "guid": "oC@m)mmc&}",
+            "note_model_uuid": "4505bd50-f400-11ed-afc9-4d7ac4064051",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Was ist eine Rechnung einer Turingmaschiene zu einer Eingabe&nbsp;\\((w_1,..., w_n) \\in (\\Sigma^*)^n\\)&nbsp;mit&nbsp;\\(n \\in \\mathbb N\\)?&nbsp;",
+                "Sei&nbsp;\\(M = (Q, \\Sigma, \\Gamma, \\Delta, s , F)\\)&nbsp;eine k-TM.&nbsp;<br><br>Eine&nbsp;<span style=\"color: rgb(248, 228, 92);\">Rechnung</span><span style=\"color: rgb(0, 0, 255);\">&nbsp;</span>von M zur Eingabe&nbsp;\\((w_1, ...., w_n)  \\in (\\Sigma ^*)^n\\)&nbsp;ist eine endliche partielle Rechnung:&nbsp;<br>\\[start_M(w_1, ..., w_n) = C_1, ..., C_m \\]bei der&nbsp;\\(C_m \\)&nbsp;eine Stoppkonfig. ist oder eine unendliche part. Rechnung\\[start_M(w_1, ..., w_n) = C_1, C_2, ...\\]"
+            ],
+            "guid": "zRX{?:@IF0",
             "note_model_uuid": "4505bd50-f400-11ed-afc9-4d7ac4064051",
             "tags": []
         }
