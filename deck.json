@@ -228,8 +228,8 @@
         {
             "__type__": "Note",
             "fields": [
-                "&nbsp;Was ist eine Turingmaschiene?",
-                "Sei&nbsp;\\(k \\in \\mathbb N\\). Eine k-Band-Turingmaschiene, kurz k-TM, ist ein Tupel&nbsp;\\[M = (Q,\\Sigma, \\Gamma, A, s, F)\\]Dabei ist<br><ul><li>\\(Q\\)&nbsp;eine endliche Menge,&nbsp;<b>Zustandsmenge</b>.</li><li>\\(\\Sigma\\)&nbsp;das&nbsp;<b>Eingabealphabet</b>, ein Alphabet mit&nbsp;\\(\\square \\not\\in \\Sigma\\).&nbsp;<br></li><li>\\(\\Gamma\\)&nbsp;das&nbsp;<b>Bandalphabet</b>, ein Alphabet mit&nbsp;\\(\\Sigma \\subseteq \\Gamma\\)&nbsp;und&nbsp;\\(\\square \\in \\Gamma \\setminus \\Sigma\\)<br></li><li>\\(\\Delta \\subseteq (Q \\times \\Gamma^k) \\times (Q \\times \\Gamma^k \\times \\{L,S,R\\}^k)\\)&nbsp;die Übergangsrelation.&nbsp;</li><li>\\(s \\in Q\\)&nbsp;der Startzustand.&nbsp;<br></li><li>\\(F \\subseteq Q\\)&nbsp;die Menge der akzeptierten Zustände.<br></li></ul>"
+                "&nbsp;Was ist eine Turingmaschine?",
+                "Sei&nbsp;\\(k \\in \\mathbb N\\). Eine k-Band-Turingmaschine, kurz k-TM, ist ein Tupel&nbsp;\\[M = (Q,\\Sigma, \\Gamma, A, s, F)\\]Dabei ist<br><ul><li>\\(Q\\)&nbsp;eine endliche Menge,&nbsp;<b>Zustandsmenge</b>.</li><li>\\(\\Sigma\\)&nbsp;das&nbsp;<b>Eingabealphabet</b>, ein Alphabet mit&nbsp;\\(\\square \\not\\in \\Sigma\\).&nbsp;<br></li><li>\\(\\Gamma\\)&nbsp;das&nbsp;<b>Bandalphabet</b>, ein Alphabet mit&nbsp;\\(\\Sigma \\subseteq \\Gamma\\)&nbsp;und&nbsp;\\(\\square \\in \\Gamma \\setminus \\Sigma\\)<br></li><li>\\(\\Delta \\subseteq (Q \\times \\Gamma^k) \\times (Q \\times \\Gamma^k \\times \\{L,S,R\\}^k)\\)&nbsp;die Übergangsrelation.&nbsp;</li><li>\\(s \\in Q\\)&nbsp;der Startzustand.&nbsp;<br></li><li>\\(F \\subseteq Q\\)&nbsp;die Menge der akzeptierten Zustände.<br></li></ul>"
             ],
             "guid": "g97-ij.BHJ",
             "note_model_uuid": "4505bd50-f400-11ed-afc9-4d7ac4064051",
@@ -238,7 +238,7 @@
         {
             "__type__": "Note",
             "fields": [
-                "Was ist die Konfiguration einer Turing Maschiene?&nbsp;",
+                "Was ist die Konfiguration einer Turing Maschine?&nbsp;",
                 "Sei&nbsp;\\(M = (Q, \\Sigma, \\Gamma, \\Delta, s, F)\\)&nbsp;eine k-TM. Eine <b>Konfiguration</b> von M ist ein Tupel\\[C= (q, w_1, ..., w_k, p_1, ..., p_k) \\in Q \\times (p^*)^k \\times \\mathbb N ^k\\]mit&nbsp;\\(p_i \\in [|w_i|] \\quad \\forall i \\in [k]\\)"
             ],
             "guid": "qaRUqhMNBb",
@@ -268,7 +268,7 @@
         {
             "__type__": "Note",
             "fields": [
-                "Was ist eine Rechnung einer Turingmaschiene zu einer Eingabe&nbsp;\\((w_1,..., w_n) \\in (\\Sigma^*)^n\\)&nbsp;mit&nbsp;\\(n \\in \\mathbb N\\)?&nbsp;",
+                "Was ist eine Rechnung einer Turingmaschine zu einer Eingabe&nbsp;\\((w_1,..., w_n) \\in (\\Sigma^*)^n\\)&nbsp;mit&nbsp;\\(n \\in \\mathbb N\\)?&nbsp;",
                 "Sei&nbsp;\\(M = (Q, \\Sigma, \\Gamma, \\Delta, s , F)\\)&nbsp;eine k-TM.&nbsp;<br><br>Eine&nbsp;<span style=\"color: rgb(248, 228, 92);\">Rechnung</span><span style=\"color: rgb(0, 0, 255);\">&nbsp;</span>von M zur Eingabe&nbsp;\\((w_1, ...., w_n)  \\in (\\Sigma ^*)^n\\)&nbsp;ist eine endliche partielle Rechnung:&nbsp;<br>\\[start_M(w_1, ..., w_n) = C_1, ..., C_m \\]bei der&nbsp;\\(C_m \\)&nbsp;eine Stoppkonfig. ist oder eine unendliche part. Rechnung\\[start_M(w_1, ..., w_n) = C_1, C_2, ...\\]"
             ],
             "guid": "zRX{?:@IF0",
