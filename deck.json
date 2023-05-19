@@ -149,7 +149,7 @@
             "__type__": "Note",
             "fields": [
                 "Wie heißt das Wort der Länge 0?",
-                "Das Wort der Länge 0 heißt leeres Wort und wird mit&nbsp;\\(\\lambda\\)&nbsp;bezeichnet. Ein Wort&nbsp;\\(w\\)&nbsp;der Länge 1 wird mit dem Symbol&nbsp;\\(w(i)\\)&nbsp;identifiziert.&nbsp;"
+                "Das Wort der Länge 0 heißt leeres Wort und wird mit&nbsp;\\(\\lambda\\)&nbsp;bezeichnet. Ein Wort&nbsp;\\(w\\)&nbsp;der Länge 1 wird mit dem Symbol&nbsp;\\(w(1)\\)&nbsp;identifiziert.&nbsp;"
             ],
             "guid": "v<*;v*(-l_",
             "note_model_uuid": "4505bd50-f400-11ed-afc9-4d7ac4064051",
@@ -218,8 +218,8 @@
         {
             "__type__": "Note",
             "fields": [
-                "Wann ist eine Funktion ein Sprachenhomomorphismus?",
-                "Für Sprachen&nbsp;\\(L\\)&nbsp;und&nbsp;\\(M\\)&nbsp;heißt eine Funktion&nbsp;\\(\\varphi: L\\to M\\)&nbsp;Homomorphismus ovn Sprachen, wenn&nbsp;\\(\\varphi(uv) = \\varphi(u) \\varphi(v) \\quad \\forall u,v \\in L\\)&nbsp;gilt.&nbsp;"
+                "Wann ist ein Sprachenhomomorphismus?",
+                "Für Sprachen&nbsp;\\(L\\)&nbsp;und&nbsp;\\(M\\)&nbsp;heißt eine Funktion&nbsp;\\(\\varphi: L\\to M\\)&nbsp;Homomorphismus von Sprachen, wenn&nbsp;\\(\\varphi(uv) = \\varphi(u) \\varphi(v) \\quad \\forall u,v \\in L\\)&nbsp;gilt.&nbsp;"
             ],
             "guid": "mh-iL64;_c",
             "note_model_uuid": "4505bd50-f400-11ed-afc9-4d7ac4064051",
