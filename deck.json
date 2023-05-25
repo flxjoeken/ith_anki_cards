@@ -66,7 +66,7 @@
         {
             "__type__": "NoteModel",
             "crowdanki_uuid": "4505bd50-f400-11ed-afc9-4d7ac4064051",
-            "css": ".card {\n  font-family: arial;\n  font-size: 20px;\n  text-align: center;\n  color: black;\n  background-color: white;\n}\n",
+            "css": ".card {\n  font-family: arial;\n  font-size: 20px;\n  text-align: center;\n  margin-left: auto;\n  margin-right: auto;\n  color: black;\n  background-color: white;\n  max-width: 1024px\n}\nblockquote {\n  padding: 20px;\n  background: #11111b;\n}",
             "flds": [
                 {
                     "collapsed": false,
@@ -110,7 +110,7 @@
             "tags": [],
             "tmpls": [
                 {
-                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Back}}",
+                    "afmt": "{{FrontSide}}\n\n<blockquote>\n{{Back}}\n</blockqoute>",
                     "bafmt": "",
                     "bfont": "",
                     "bqfmt": "",
@@ -118,7 +118,7 @@
                     "did": null,
                     "name": "Card 1",
                     "ord": 0,
-                    "qfmt": "{{Front}}"
+                    "qfmt": "<blockquote>\n{{Front}}\n</blockquote>"
                 }
             ],
             "type": 0
@@ -128,8 +128,8 @@
         {
             "__type__": "Note",
             "fields": [
-                "Was ist ein Alphabet?&nbsp;",
-                "Ein&nbsp;<b>Alphabet&nbsp;</b>ist eine nichtleere endliche Menge&nbsp;\\(\\Sigma\\). Das Alphabet&nbsp;\\(\\Sigma\\)&nbsp;wird&nbsp;\\(|\\Sigma|-är\\)&nbsp;bezeichnet. Die Elemente con&nbsp;\\(\\Sigma\\)&nbsp;heißen Buchstaben oder Symbole.&nbsp;"
+                "Was ist ein <b>Alphabet</b>?&nbsp;",
+                "Ein&nbsp;<b>Alphabet&nbsp;</b>ist eine nichtleere endliche Menge&nbsp;\\(\\Sigma\\). Das Alphabet&nbsp;\\(\\Sigma\\)&nbsp;wird&nbsp;\\(|\\Sigma|-är\\)&nbsp;bezeichnet. <br>Die Elemente von&nbsp;\\(\\Sigma\\)&nbsp;heißen <b>Buchstaben</b> oder <b>Symbole</b>.&nbsp;"
             ],
             "guid": "wT>=7]7NCc",
             "note_model_uuid": "4505bd50-f400-11ed-afc9-4d7ac4064051",
@@ -138,8 +138,8 @@
         {
             "__type__": "Note",
             "fields": [
-                "Was ist ein&nbsp;<b>Wort</b>?",
-                "Ein&nbsp;<b>Wort&nbsp;</b>über einem Alphabet&nbsp;\\(\\Sigma\\)&nbsp;ist eine endliche Folge von Symbolen aus&nbsp;\\(\\Sigma\\). Die Länge eines Wortes&nbsp;\\(w\\)&nbsp;ist&nbsp;\\(|w|\\). Für&nbsp;\\(i \\in [|w|]\\)&nbsp;bezeichnet&nbsp;\\(w(i)\\)&nbsp;das i-te Element von&nbsp;\\(w\\)&nbsp;und für Symbole&nbsp;\\(a_1, ..., a_n \\in \\Sigma\\)&nbsp;bezeichnet&nbsp;\\(a_1, a_2, ..., a_n\\)&nbsp;das Wort&nbsp;\\(w\\)&nbsp;der Länge n mit&nbsp;\\(w(i) = a_i \\quad \\forall i \\in [n]\\)"
+                "Was ist ein&nbsp;<span style=\"color: rgb(248, 228, 92);\"><b>Wort</b></span>?",
+                "Ein&nbsp;<b>Wort&nbsp;</b>über einem Alphabet&nbsp;\\(\\Sigma\\)&nbsp;ist eine endliche Folge von Symbolen aus&nbsp;\\(\\Sigma\\). Die Länge eines Wortes&nbsp;\\(w\\)&nbsp;ist&nbsp;\\(|w|\\). <br><br>Für&nbsp;\\(i \\in [|w|]\\)&nbsp;bezeichnet&nbsp;\\(w(i)\\)&nbsp;das i-te Element von&nbsp;\\(w\\)&nbsp;und für Symbole&nbsp;\\(a_1, ..., a_n \\in \\Sigma\\)&nbsp;bezeichnet&nbsp;\\(a_1, a_2, ..., a_n\\)&nbsp;das Wort&nbsp;\\(w\\)&nbsp;der Länge n mit&nbsp;\\(w(i) = a_i \\quad \\forall i \\in [n]\\)"
             ],
             "guid": "upQl?t4iT9",
             "note_model_uuid": "4505bd50-f400-11ed-afc9-4d7ac4064051",
@@ -272,6 +272,26 @@
                 "Sei&nbsp;\\(M = (Q, \\Sigma, \\Gamma, \\Delta, s , F)\\)&nbsp;eine k-TM.&nbsp;<br><br>Eine&nbsp;<span style=\"color: rgb(248, 228, 92);\">Rechnung</span><span style=\"color: rgb(0, 0, 255);\">&nbsp;</span>von M zur Eingabe&nbsp;\\((w_1, ...., w_n)  \\in (\\Sigma ^*)^n\\)&nbsp;ist eine endliche partielle Rechnung:&nbsp;<br>\\[start_M(w_1, ..., w_n) = C_1, ..., C_m \\]bei der&nbsp;\\(C_m \\)&nbsp;eine Stoppkonfig. ist oder eine unendliche part. Rechnung\\[start_M(w_1, ..., w_n) = C_1, C_2, ...\\]"
             ],
             "guid": "zRX{?:@IF0",
+            "note_model_uuid": "4505bd50-f400-11ed-afc9-4d7ac4064051",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Wie ist der Code einer Turingmaschiene definiert?",
+                "Wir betrachten die Funktion&nbsp;\\(code\\)&nbsp;(mit geeignetem Definitionsbereich) und Zielmenge&nbsp;\\(\\{0,1\\}^*\\), für die folgendes gilt:&nbsp;<br>Zunächst gelte\\[code(L) = 10 \\quad code(S) = 00 \\quad code(R) = 01\\]Für eine Instruktion\\[I=(q, a, w', a', B) \\in \\mathbb N _0 \\times\\{0,1\\} \\times \\mathbb N _0 \\times\\{0,1\\} \\times \\{L,S,R\\}\\]einer normierten TM sei\\[code(I) = 0^{|bin(q)|} 1bin(q)a0^{|bin(q')|} q bin(q') a' code(B)\\]Für eine endliche Menge&nbsp;\\[\\Delta \\subseteq \\mathbb N_0 \\times \\{0,1\\} \\times \\mathbb N_0 \\times \\{0,1\\} \\times \\{L,S,R\\}\\]von Instruktionen einer normierten TM und&nbsp;\\(i \\in [|\\Delta|]\\)&nbsp;sei&nbsp;\\(code_i(\\Delta)\\)&nbsp;das in längenlexikoraphischer Ordnung i-te Wort in&nbsp;\\(\\{code(I) : I \\in \\Delta\\}\\)&nbsp;und sei\\[code(\\Delta) = code_1(\\Delta)...code_\\Delta(\\Delta)\\]Für eine normierte TM&nbsp;\\(M=(\\{0,..., n\\}, \\{0,1\\}, \\{\\square,0,1\\}, \\Delta, 0, \\{0\\})\\)&nbsp;sei\\[code(M) = 0^{|bin(n)|}1bin(M) code(\\Delta)\\]der Code von M.&nbsp;<br>"
+            ],
+            "guid": "Pf~w]^8!+Q",
+            "note_model_uuid": "4505bd50-f400-11ed-afc9-4d7ac4064051",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Die Funktion&nbsp;\\(\\color{yellow}{code}\\)&nbsp;einer Turingmaschiene ist eine Funktion, die Elemente einer Turingmaschine auf&nbsp;\\(\\{0,1\\}^*\\)&nbsp;abbildet.&nbsp;",
+                "<div style=\"text-align: left;\">Die Funktion&nbsp;\\(\\color {yellow} \\text{code}\\)&nbsp;bildet eine Instruktion</div>\\[I = (q, a, q',a',B) \\qquad\n\\begin{cases}\n   \\quad q  \\quad - \\quad \\text{Anfangszustand}\\\\ \n   \\quad a  \\quad - \\quad \\text{vom Band gelesenes Symbol }\\\\\n   \\quad q' \\quad - \\quad \\text{Nachfolgezustand}\\\\\n   \\quad a' \\quad - \\quad \\text{auf das Band geschriebenes Symbol}\\\\\n   \\quad B  \\quad - \\quad \\text{Wohin sich der Schreib- / Lesekopf bewegt}\n\\end{cases}\\]<div style=\"text-align: left;\">wiefolgt ab:&nbsp;</div><div style=\"text-align: center;\"></div><div style=\"text-align: center;\"></div>\\[\\text{code}(I) \\quad = \n\\quad \\left(\\ 0^{|\\text{bin}(q)|} \\ 1 \\ \\text{bin}(q) \\ a \\ \\right) \\quad \\circ \n\\quad \\left(\\ 0^{|\\text{bin}(q')|} \\ 1 \\ \\text{bin}(q')\\ a' \\quad \\circ \n\\quad \\text{code}(B) \\ \\right)\\]<div style=\"text-align: center;\"></div><div style=\"text-align: center;\"></div><div style=\"text-align: center;\"></div><div style=\"text-align: center;\"></div>"
+            ],
+            "guid": "Q9;%{G`-)2",
             "note_model_uuid": "4505bd50-f400-11ed-afc9-4d7ac4064051",
             "tags": []
         }
